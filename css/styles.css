@@ -293,6 +293,10 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-img {
+  display: block;
+}
+
 .team-text-box {
   padding-top: 30px;
   padding-bottom: 30px;
