@@ -163,11 +163,17 @@ p {
 /* Заголовок H1 */
 
 .hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/background-hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-hero-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
   background-color: var(--brand-color-hero-footer);
 }
 
@@ -281,10 +287,18 @@ p {
   justify-content: space-between;
 }
 
+.team-list-item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .team-text-box {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--brand-color_6);
 }
 .team-name {
   font-weight: 500;
@@ -507,6 +521,13 @@ p {
   margin-left: 8px;
 }
 
+.button-item:hover,
+.button-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--brand-color_6);
@@ -539,6 +560,11 @@ p {
 .gallery-item {
   flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
+}
+
+.gallery-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-img {
